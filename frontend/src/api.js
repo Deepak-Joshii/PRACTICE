@@ -1,7 +1,5 @@
-import axios from "axios";
-
-export const API = "https://practice-gg4k.onrender.com/api";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 export const axiosInstance = axios.create({
-  baseURL: API
+  baseURL: BASE_URL
 });
